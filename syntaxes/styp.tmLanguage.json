@@ -19,7 +19,7 @@
           "name": "punctuation.definition.tag.end.html"
         },
         "2": {
-          "name": "meta.tag-content.jsx"
+          "name": "punctuation.definition.tag.end.html"
         },
         "3": {
           "name": "punctuation.definition.tag.begin.html"
@@ -31,10 +31,10 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "meta.embedded.block.js-react",
+      "name": "meta.embedded.js.jsx",
       "patterns": [
         {
-          "include": "source.js-react"
+          "include": "source.js.jsx"
         }
       ]
     },
@@ -58,6 +58,47 @@
           "name": "punctuation.definition.tag.end.html"
         },
         "2": {
+          "name": "punctuation.definition.tag.end.html"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "4": {
+          "name": "entity.name.tag.html"
+        },
+        "5": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "name": "meta.embedded.css",
+      "patterns": [
+        {
+          "include": "source.css"
+        }
+      ]
+    },
+    {
+      "begin": "(<)([a-zA-Z0-9:]+)",
+      "beginCaptures": {
+        "0": {
+          "name": "meta.tag.block.jsx"
+        },
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.html"
+        }
+      },
+      "end": "(?<=/(>))|((<)/)(\\2)(>)",
+      "endCaptures": {
+        "0": {
+          "name": "meta.tag.block.jsx"
+        },
+        "1": {
+          "name": "punctuation.definition.tag.end.html"
+        },
+        "2": {
           "name": "meta.tag-content.jsx"
         },
         "3": {
@@ -70,10 +111,34 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "meta.embedded.block.css",
       "patterns": [
         {
-          "include": "source.css"
+          "begin": "\\G",
+          "end": ">",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.tag.end.html"
+            }
+          },
+          "name": "meta.tag.block.jsx",
+          "patterns": [
+            {
+              "include": "#tag-stuff"
+            }
+          ]
+        },
+        {
+          "begin": "(?!\\G)",
+          "end": "(?!\\G)(?=</)",
+          "name": "meta.tag-content.jsx",
+          "patterns": [
+            {
+              "include": "#jsx-embedded-js"
+            },
+            {
+              "include": "text.html.basic#entities"
+            }
+          ]
         }
       ]
     },
@@ -81,5 +146,82 @@
       "match": "<>",
       "name": "invalid.illegal.incomplete.html"
     }
-  ]
+  ],
+  "repository": {
+    "jsx-attribute": {
+      "begin": "(?<==)\\{",
+      "end": "\\}",
+      "name": "meta.embedded.line.js",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    "jsx-comment-block": {
+      "begin": "/\\*",
+      "captures": {
+        "0": {
+          "name": "punctuation.definition.comment.js"
+        }
+      },
+      "end": "\\*/",
+      "name": "comment.block.js"
+    },
+    "jsx-comment-line": {
+      "begin": "(^[ \\t]+)?(?=//)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.whitespace.comment.leading.js"
+        }
+      },
+      "end": "(?!\\G)",
+      "patterns": [
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.js"
+            }
+          },
+          "end": "\\n",
+          "name": "comment.line.double-slash.js"
+        }
+      ]
+    },
+    "jsx-embedded-js": {
+      "begin": "\\{",
+      "end": "\\}",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    "tag-stuff": {
+      "patterns": [
+        {
+          "include": "text.html.basic#tag-generic-attribute"
+        },
+        {
+          "include": "text.html.basic#string-double-quoted"
+        },
+        {
+          "include": "text.html.basic#string-single-quoted"
+        },
+        {
+          "include": "#jsx-attribute"
+        },
+        {
+          "include": "#jsx-comment-block"
+        },
+        {
+          "include": "#jsx-comment-line"
+        },
+        {
+          "include": "text.html.basic#unquoted-attribute"
+        }
+      ]
+    }
+  }
 }

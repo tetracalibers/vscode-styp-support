@@ -14,33 +14,14 @@
       {
         "id": "styp",
         "aliases": [
-          "STYlePatch",
+          "StylePatch",
+          "stylepatch",
           "styp"
         ],
         "extensions": [
           ".styp"
         ],
-        "configuration": "./language-configuration.json"
-      },
-      {
-        "id": "javascript-jsx",
-        "aliases": [
-          "jsx"
-        ],
-        "extensions": [
-          ".jsx",
-          ".tsx"
-        ]
-      },
-      {
-        "id": "js-react",
-        "aliases": [
-          "react"
-        ],
-        "extensions": [
-          ".jsx",
-          ".tsx"
-        ]
+        "configuration": "./configuration/jsx-tag-language-configuration.json"
       }
     ],
     "grammars": [
@@ -49,24 +30,13 @@
         "scopeName": "source.styp",
         "path": "./syntaxes/styp.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.block.js-react": "js-react",
-          "meta.embedded.block.css": "css"
+          "meta.embedded.js.jsx": "jsx-tags",
+          "meta.tag.block.jsx": "jsx-tags",
+          "meta.tag-content.jsx": "javascript",
+          "meta.embnedded.line.js": "javascript",
+          "jsx-embedded-js": "javascript",
+          "meta.embedded.css": "css"
         }
-      },
-      {
-        "language": "javascript-jsx",
-        "scopeName": "source.javascript-jsx",
-        "path": "./syntaxes/javascript-jsx.tmLanguage.json"
-      },
-      {
-        "language": "js-react",
-        "scopeName": "source.js-react",
-        "path": "./syntaxes/js-react.tmLanguage.json"
-      },
-      {
-        "language": "css",
-        "scopeName": "source.css",
-        "path": "./syntaxes/css.tmLanguage.json"
       }
     ]
   },
