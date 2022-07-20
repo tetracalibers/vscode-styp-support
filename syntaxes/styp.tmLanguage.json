@@ -70,10 +70,10 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "meta.embedded.css",
+      "name": "meta.embedded.scss",
       "patterns": [
         {
-          "include": "source.css"
+          "include": "source.css.scss"
         }
       ]
     },
