@@ -21,6 +21,16 @@
           ".styp"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "javascript-jsx",
+        "aliases": [
+          "jsx"
+        ],
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
       }
     ],
     "grammars": [
@@ -28,6 +38,16 @@
         "language": "styp",
         "scopeName": "source.styp",
         "path": "./syntaxes/styp.tmLanguage.json"
+      },
+      {
+        "language": "javascript-jsx",
+        "scopeName": "source.javascript-jsx",
+        "path": "./syntaxes/javascript-jsx.tmLanguage.json"
+      },
+      {
+        "language": "css",
+        "scopeName": "source.css",
+        "path": "./syntaxes/css.tmLanguage.json"
       }
     ]
   },
