@@ -49,7 +49,8 @@
         "scopeName": "source.styp",
         "path": "./syntaxes/styp.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.block.js-react": "javascript-jsx"
+          "meta.embedded.block.js-react": "js-react",
+          "meta.embedded.block.css": "css"
         }
       },
       {
