@@ -37,7 +37,10 @@
       {
         "language": "styp",
         "scopeName": "source.styp",
-        "path": "./syntaxes/styp.tmLanguage.json"
+        "path": "./syntaxes/styp.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript-jsx": "javascript-jsx"
+        }
       },
       {
         "language": "javascript-jsx",

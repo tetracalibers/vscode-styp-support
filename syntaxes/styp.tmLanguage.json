@@ -1,12 +1,8 @@
 {
   "fileTypes": ["styp"],
-  "keyEquivalent": "^~J",
   "scopeName": "source.styp",
   "name": "styp",
   "patterns": [
-    {
-      "include": "#source.javascript-jsx"
-    },
     {
       "begin": "(<)(StylePatch)",
       "beginCaptures": {
@@ -23,7 +19,7 @@
           "name": "punctuation.definition.tag.end.html"
         },
         "2": {
-          "name": "meta.css-in-js.styp"
+          "name": "meta.tag-content.jsx"
         },
         "3": {
           "name": "punctuation.definition.tag.begin.html"
@@ -35,7 +31,16 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "source.javascript-jsx.embedded.html"
+      "name": "meta.embedded.block.javascript-jsx",
+      "patterns": [
+        {
+          "include": "source.javascript-jsx"
+        }
+      ]
+    },
+    {
+      "match": "<>",
+      "name": "invalid.illegal.incomplete.html"
     }
   ]
 }
