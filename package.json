@@ -21,7 +21,11 @@
         "extensions": [
           ".styp"
         ],
-        "configuration": "./configuration/jsx-tag-language-configuration.json"
+        "configuration": "./configuration/jsx-tag-language-configuration.json",
+        "icon": {
+          "light": "./icons/styp-hex.png",
+          "dark": "./icons/styp-hex.png"
+        }
       }
     ],
     "grammars": [
