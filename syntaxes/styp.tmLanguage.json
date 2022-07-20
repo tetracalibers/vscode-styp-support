@@ -31,10 +31,10 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "meta.embedded.block.javascript-jsx",
+      "name": "meta.embedded.block.js-react",
       "patterns": [
         {
-          "include": "source.javascript-jsx"
+          "include": "source.js-react"
         }
       ]
     },

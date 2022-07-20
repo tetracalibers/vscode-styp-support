@@ -31,6 +31,16 @@
           ".jsx",
           ".tsx"
         ]
+      },
+      {
+        "id": "js-react",
+        "aliases": [
+          "react"
+        ],
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
       }
     ],
     "grammars": [
@@ -39,13 +49,18 @@
         "scopeName": "source.styp",
         "path": "./syntaxes/styp.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.block.javascript-jsx": "javascript-jsx"
+          "meta.embedded.block.js-react": "javascript-jsx"
         }
       },
       {
         "language": "javascript-jsx",
         "scopeName": "source.javascript-jsx",
         "path": "./syntaxes/javascript-jsx.tmLanguage.json"
+      },
+      {
+        "language": "js-react",
+        "scopeName": "source.js-react",
+        "path": "./syntaxes/js-react.tmLanguage.json"
       },
       {
         "language": "css",
