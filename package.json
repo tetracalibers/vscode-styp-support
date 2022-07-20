@@ -1,0 +1,25 @@
+{
+    "name": "vscode-lang-styp",
+    "displayName": "vscode-StylePatch",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "styp",
+            "aliases": ["STYlePatch", "styp"],
+            "extensions": [".styp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "styp",
+            "scopeName": "source.styp",
+            "path": "./syntaxes/styp.tmLanguage.json"
+        }]
+    }
+}
