@@ -39,6 +39,41 @@
       ]
     },
     {
+      "begin": "(<)(Props)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "2": {
+          "name": "entity.name.tag.html"
+        }
+      },
+      "end": "(?<=/(>))|((<)/)(\\2)(>)",
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.end.html"
+        },
+        "2": {
+          "name": "punctuation.definition.tag.end.html"
+        },
+        "3": {
+          "name": "punctuation.definition.tag.begin.html"
+        },
+        "4": {
+          "name": "entity.name.tag.html"
+        },
+        "5": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "name": "meta.embedded.yaml",
+      "patterns": [
+        {
+          "include": "source.yaml"
+        }
+      ]
+    },
+    {
       "match": "<>",
       "name": "invalid.illegal.incomplete.html"
     },

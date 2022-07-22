@@ -36,7 +36,8 @@
           "meta.tag-content.jsx": "javascript",
           "meta.embnedded.line.js": "javascript",
           "jsx-embedded-js": "javascript",
-          "meta.embedded.css": "css"
+          "meta.embedded.css": "css",
+          "meta.embedded.yaml": "yaml"
         }
       }
     ]
