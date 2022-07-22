@@ -9,6 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
+  "icon": "./icons/styp.svg",
   "contributes": {
     "languages": [
       {
@@ -21,11 +22,7 @@
         "extensions": [
           ".styp"
         ],
-        "configuration": "./configuration/jsx-tag-language-configuration.json",
-        "icon": {
-          "light": "./icons/styp-hex.png",
-          "dark": "./icons/styp-hex.png"
-        }
+        "configuration": "./configuration/jsx-tag-language-configuration.json"
       }
     ],
     "grammars": [
@@ -39,7 +36,7 @@
           "meta.tag-content.jsx": "javascript",
           "meta.embnedded.line.js": "javascript",
           "jsx-embedded-js": "javascript",
-          "meta.embedded.scss": "scss"
+          "meta.embedded.css": "css"
         }
       }
     ]
