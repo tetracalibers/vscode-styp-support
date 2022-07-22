@@ -9,7 +9,7 @@
   "categories": [
     "Programming Languages"
   ],
-  "icon": "./icons/styp.svg",
+  "icon": "https://github.com/tetracalibers/vscode-styp-support/blob/main/icons/styp.png",
   "contributes": {
     "languages": [
       {
