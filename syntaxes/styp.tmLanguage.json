@@ -4,7 +4,7 @@
   "name": "styp",
   "patterns": [
     {
-      "begin": "(<)(StylePatch)",
+      "begin": "(<)(Structure)",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.html"
