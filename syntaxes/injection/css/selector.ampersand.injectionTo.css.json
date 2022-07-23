@@ -9,7 +9,7 @@
   "repository": {
     "styp-ampersand-selector": {
       "match": "&",
-      "name": "punctuation.definition.entity.styp"
+      "name": "entity.name.tag.root.styp"
     }
   }
 }
