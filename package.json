@@ -45,6 +45,13 @@
           "meta.embedded.css": "css",
           "meta.embedded.yaml": "yaml"
         }
+      },
+      {
+        "path": "./syntaxes/injection/func.props.injectionTo.css.json",
+        "scopeName": "func-props.to-css.injection",
+        "injectTo": [
+          "source.styp"
+        ]
       }
     ]
   },
