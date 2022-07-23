@@ -59,6 +59,13 @@
         "injectTo": [
           "source.styp"
         ]
+      },
+      {
+        "path": "./syntaxes/injection/css/keyword.control.conditional.injectionTo.css.json",
+        "scopeName": "keyword.control.conditional.to-css.injection",
+        "injectTo": [
+          "source.styp"
+        ]
       }
     ]
   },
