@@ -6,6 +6,9 @@
       "include": "#styp-cascade-truthy"
     },
     {
+      "include": "#styp-cascade-falsy"
+    },
+    {
       "include": "#styp-cascade-exist"
     },
     {
@@ -34,6 +37,27 @@
       },
       "name": "variable.other.constant.styp"
     },
+    "styp-cascade-falsy": {
+      "begin": "(@)(falsy)(\\()",
+      "end": "(\\))",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.keyword.styp"
+        },
+        "2": {
+          "name": "keyword.control.conditional.falsy.styp"
+        },
+        "3": {
+          "name": "punctuation.section.parens.begin"
+        }
+      },
+      "endCaptures": {
+        "1": {
+          "name": "punctuation.section.parens.end"
+        }
+      },
+      "name": "variable.other.constant.styp"
+    },
     "styp-cascade-exist": {
       "begin": "(@)(exist)(\\()",
       "end": "(\\))",
@@ -42,7 +66,7 @@
           "name": "punctuation.definition.keyword.styp"
         },
         "2": {
-          "name": "keyword.control.conditional.truthy.styp"
+          "name": "keyword.control.conditional.exist.styp"
         },
         "3": {
           "name": "punctuation.section.parens.begin"
