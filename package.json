@@ -11,6 +11,12 @@
   ],
   "icon": "https://github.com/tetracalibers/vscode-styp-support/blob/main/icons/styp.png",
   "contributes": {
+    "configurationDefaults": {
+      "[styp]": {
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true
+      }
+    },
     "languages": [
       {
         "id": "styp",
