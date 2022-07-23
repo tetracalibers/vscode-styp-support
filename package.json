@@ -66,6 +66,13 @@
         "injectTo": [
           "source.styp"
         ]
+      },
+      {
+        "path": "./syntaxes/injection/jsx/keyword.control.loop.injectionTo.jsx.json",
+        "scopeName": "keyword.control.loop.to-jsx.injection",
+        "injectTo": [
+          "source.styp"
+        ]
       }
     ]
   },
