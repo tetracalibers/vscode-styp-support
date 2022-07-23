@@ -29,8 +29,7 @@
           "name": "punctuation.section.parens.end"
         }
       },
-      "name": "support.function.styp",
-      "injectionTo": "L:meta.property-value.css"
+      "name": "support.function.styp"
     }
   }
 }

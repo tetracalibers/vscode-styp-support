@@ -47,8 +47,15 @@
         }
       },
       {
-        "path": "./syntaxes/injection/func.props.injectionTo.css.json",
+        "path": "./syntaxes/injection/css/func.props.injectionTo.css.json",
         "scopeName": "func-props.to-css.injection",
+        "injectTo": [
+          "source.styp"
+        ]
+      },
+      {
+        "path": "./syntaxes/injection/css/selector.ampersand.injectionTo.css.json",
+        "scopeName": "selector-ampersand.to-css.injection",
         "injectTo": [
           "source.styp"
         ]
