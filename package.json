@@ -73,6 +73,13 @@
         "injectTo": [
           "source.styp"
         ]
+      },
+      {
+        "path": "./syntaxes/injection/css/use-vocabulary.injectionTo.styp.cascade.json",
+        "scopeName": "use-vocabulary.to-cascade.injection",
+        "injectTo": [
+          "source.styp"
+        ]
       }
     ]
   },

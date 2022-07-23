@@ -127,7 +127,7 @@
           "name": "punctuation.definition.tag.end.html"
         }
       },
-      "name": "meta.embedded.css",
+      "name": "meta.block.cascade.styp meta.embedded.css",
       "patterns": [
         {
           "include": "source.css"
