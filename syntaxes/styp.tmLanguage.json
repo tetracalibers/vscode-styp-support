@@ -72,7 +72,7 @@
       "name": "invalid.illegal.incomplete.html"
     },
     {
-      "begin": "(<)(Cascade)(>)",
+      "begin": "(<)(Cascade)(>)((?<=>)\n)",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.html"
@@ -82,6 +82,9 @@
         },
         "3": {
           "name": "punctuation.definition.tag.end.html"
+        },
+        "4": {
+          "name": "meta.jsx.children.tsx"
         }
       },
       "end": "(</)(\\2)(>)",
@@ -104,36 +107,27 @@
       ]
     },
     {
-      "begin": "(<)([a-zA-Z0-9:]+)",
+      "begin": "(<)([a-zA-Z0-9:]+)(>)",
       "beginCaptures": {
-        "0": {
-          "name": "meta.tag.block.jsx"
-        },
         "1": {
           "name": "punctuation.definition.tag.begin.html"
         },
         "2": {
           "name": "entity.name.tag.html"
-        }
-      },
-      "end": "(?<=/(>))|((<)/)(\\2)(>)",
-      "endCaptures": {
-        "0": {
-          "name": "meta.tag.block.jsx"
-        },
-        "1": {
-          "name": "punctuation.definition.tag.end.html"
-        },
-        "2": {
-          "name": "meta.tag-content.jsx"
         },
         "3": {
+          "name": "punctuation.definition.tag.end.html"
+        }
+      },
+      "end": "(</)(\\2)(>)",
+      "endCaptures": {
+        "1": {
           "name": "punctuation.definition.tag.begin.html"
         },
-        "4": {
+        "2": {
           "name": "entity.name.tag.html"
         },
-        "5": {
+        "3": {
           "name": "punctuation.definition.tag.end.html"
         }
       },
